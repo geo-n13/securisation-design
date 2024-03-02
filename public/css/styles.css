@@ -1,0 +1,63 @@
+/* Reset de quelques styles par défaut pour assurer la cohérence entre navigateurs */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Styles pour le champ de recherche */
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Styles pour le bouton de recherche */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5cb85c;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
+}
+
+/* Styles pour la liste des résultats de recherche */
+#searchResults {
+    list-style: none;
+    padding: 0;
+}
+
+#searchResults div {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Ajoutez des médias queries pour la réactivité au besoin */
+@media (min-width: 600px) {
+    input[type="text"] {
+        width: 50%;
+    }
+}
